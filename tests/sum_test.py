@@ -42,5 +42,5 @@ def test_too_long_exec():
     base_list = [1]*10000 + [5,6]
 
     assert sum_n(l = base_list, N = 2, S = 11) == [5,6]
-    assert sum_n(l = base_list, N = 5, S = 15) == [1,1,1,5,6]
-    assert sum_n(l = base_list, N = 10, S = 11) == [1,1,1,1,1,1,1,1,5,6]
+    assert sum_n(l = base_list, N = 5, S = 14) == [1,1,1,5,6]
+    assert sum_n(l = base_list, N = 10, S = 19) == [1,1,1,1,1,1,1,1,5,6]
