@@ -62,7 +62,4 @@ def sum_n(l, N, S):
     return recursive(sorted(l), N, S)
 
 if __name__ == '__main__':
-    base_list = [1]*10000 + [5,6]
 
-    assert sum_n(l = base_list, N = 2, S = 11) == [5,6]
-    assert sum_n(l = base_list, N = 5, S = 15) == [1,1,1,5,6]
