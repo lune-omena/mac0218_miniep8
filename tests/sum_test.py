@@ -29,13 +29,13 @@ def test_two():
     assert sum_n(l = [1,2,3], N = 2, S = 1) == []
     assert (sum_n(l = [1,2,3,0,0,0,0,6], N = 2, S = 3) == [1,2] or sum_n(l = [1,2,3,0,0,0,0,6], N = 2, S = 3) == [0,3])
     assert sum_n(l = [1,2,3,4,10], N = 2, S = 14) == [4,10]
-    assert sum_n(l = [1,2,3,8,15], N = 2, S = 10) == []
+    assert sum_n(l = [1,2,3,8,15], N = 2, S = 10) == [2,8]
 
 def test_N():
     assert sum_n(l = [1,2,3], N = 3, S = 6) == [1,2,3]
     assert sum_n(l = [1,2,3,4,5,6], N = 4, S = 13) == [1,2,4,6]
     assert sum_n(l = [1,2,3,4,5,6], N = 5, S = 6) == []
-    assert sum_n(l = [1,2,3,4,5,6,10], N = 5, S = 12) == [1,2,3,5,10]
+    assert sum_n(l = [1,2,3,4,5,6,10], N = 5, S = 21) == [1,2,3,5,10]
 
 @pytest.mark.timeout(15)
 def test_too_long_exec():
