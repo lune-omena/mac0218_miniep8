@@ -8,11 +8,11 @@ def test_empty():
     assert sum_n(l = [], N = 10, S = 10) == []
 
 def test_impossibility():
-    with pytest.raises(ValueError, match="N must be len(N) or less"):
-        sum_n(l = [1,2,3], N = 3, S = 2) == []
-    with pytest.raises(ValueError, match="N must be len(N) or less"):
+    with pytest.raises(ValueError, match="N must be len N or less"):
+        sum_n(l = [1,2,3], N = 4, S = 2) == []
+    with pytest.raises(ValueError, match="N must be len N or less"):
         sum_n(l = [1], N = 30, S = 2) == []
-    with pytest.raises(ValueError, match="N must be len(N) or less"):
+    with pytest.raises(ValueError, match="N must be len N or less"):
         sum_n(l = [1,2,3], N = 300, S = 2) == []
     with pytest.raises(ValueError, match="N must be 1 or more"):
         sum_n(l = [1,2,3], N = -1, S = 2) == []
